@@ -1,14 +1,51 @@
-# React + Vite
+# Frontend FAQ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📂 Project Structure
+Under the `src` folder, you'll find the entire project. Inside it, there are three key directories:
+- **pages/**: Contains different views and pages.
+- **components/**: Holds reusable UI components.
+- **styles/**: Stores global and component-specific styles.
 
-Currently, two official plugins are available:
+### ⚠️ Important
+Avoid modifying root files such as `App.tsx`, `main.tsx`, and `index.html` unless absolutely necessary.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Setting Up the React Environment
+1. Ensure **npm** is installed on your system.
+2. Run the following command inside the repository:
+   ```sh
+   npm install
+   ```
+3. Once all dependencies are installed, start the development server:
+   ```sh
+   npm run dev
+   ```
+4. The terminal will display a local address where the project is running with live reload enabled:
+   ```sh
+   VITE v6.0.11  ready in 133 ms
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Actividad-7
-# Actividad-7
+   ➜  Local:   http://localhost:5173/
+   ➜  Network: use --host to expose
+   ➜  press h + enter to show help
+   ```
+
+---
+
+## 📦 Adding a New Dependency
+1. Open `package.json`.
+2. If the dependency is only for development, add it under `devDependencies`. If it is required for the app to function, add it under `dependencies`.
+3. Run:
+   ```sh
+   npm install
+   ```
+
+---
+
+## ✅ Good Practices
+- When creating a **reusable component**, place it inside the `components` folder, under its own subfolder (e.g., `components/Header/`). Each component should have its own `.css` file.
+- Avoid hardcoding colors in styles. Instead, define and use color variables in `global.css`.
+
+---
+
+
