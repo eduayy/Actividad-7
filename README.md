@@ -58,5 +58,5 @@ Avoid modifying root files such as `App.tsx`, `main.tsx`, and `index.html` unles
 4. Herramientas
 5. Proyectos
 6. Líneas de Investigación
-7. SNI
+7. Artículos 
 ---
