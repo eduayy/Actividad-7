@@ -48,4 +48,15 @@ Avoid modifying root files such as `App.tsx`, `main.tsx`, and `index.html` unles
 
 ---
 
+# DATABASE 
 
+---
+## TABLES NAMES
+1. Usuarios
+2. Investigadores
+3. Estudiantes
+4. Herramientas
+5. Proyectos
+6. Líneas de Investigación
+7. SNI
+--
