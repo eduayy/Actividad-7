@@ -69,9 +69,11 @@ function SignIn() {
             value={password}
             onChange={handlePassword}
           />
-          <button type="submit">Iniciar Sesión</button>
-          <button type="button" onClick={() => window.location.href = "/menu"}>
-          Iniciar Sesión
+          <button
+            type="button"
+            onClick={() => (window.location.href = "/menu")}
+          >
+            Iniciar Sesión
           </button>
           <a href="/recover" className="olvido">
             ¿Olvidaste tu contraseña?

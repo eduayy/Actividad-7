@@ -1,7 +1,6 @@
 .Window {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgb(6, 6, 61) 40%, purple);
   height: 100vh;
