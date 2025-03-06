@@ -20,8 +20,8 @@ function SignIn() {
             autoComplete="off"
             autoCapitalize="off"
           />
-          <button type="submit" href="/recover">
-            Iniciar Sesión
+          <button type="button" onClick={() => window.location.href = "/menu"}>
+          Iniciar Sesión
           </button>
           <a href="/recover" className="olvido">
             Olvidaste tu contraseña?
