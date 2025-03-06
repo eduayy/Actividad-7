@@ -1,4 +1,4 @@
-import "./menu.scss";
+import "./menu.css";
 
 function menu() {
   return <></>;
