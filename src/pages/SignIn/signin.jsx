@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Menu from "../Menu/menu";
+import Menu from "../Menu/menu.jsx";
 import "./signin.css";
 
 function SignIn() {
@@ -9,10 +9,8 @@ function SignIn() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleEmail = (e) => {
-    const value = e.target.value;
-    setEmail(value);
-
-    if (!value.includes("@") || value.length < 4) {
+    setEmail(e.target.value);
+    if (!e.target.value.includes("@") || e.target.value.length < 4) {
       setError("Correo electrónico no válido.");
     } else {
       setError("");
@@ -55,8 +53,6 @@ function SignIn() {
             className="input"
             type="text"
             placeholder="Usuario o Correo"
-            autoComplete="off"
-            autoCapitalize="off"
             value={email}
             onChange={handleEmail}
           />
@@ -64,17 +60,10 @@ function SignIn() {
             className="inputs"
             type="password"
             placeholder="Contraseña"
-            autoComplete="off"
-            autoCapitalize="off"
             value={password}
             onChange={handlePassword}
           />
-          <button
-            type="button"
-            onClick={() => (window.location.href = "/menu")}
-          >
-            Iniciar Sesión
-          </button>
+          <button type="submit">Iniciar Sesión</button>
           <a href="/recover" className="olvido">
             ¿Olvidaste tu contraseña?
           </a>
