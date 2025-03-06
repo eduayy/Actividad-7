@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./register.css";
 
 function Register() {
@@ -104,9 +104,9 @@ function Register() {
           <button type="submit" disabled={isButtonDisabled}>
             Registrarse
           </button>
-          <a href="/signin" className="Register">
+          <Link to="/signIn" className="Register">
             ¿Ya tienes cuenta? Inicia sesión
-          </a>
+          </Link>
         </form>
       </div>
     </div>
