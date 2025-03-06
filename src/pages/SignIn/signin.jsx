@@ -24,6 +24,10 @@ function SignIn() {
             autoCapitalize="off"
           />
           <button type="submit">Iniciar Sesión</button>
+          <a href="/register" className="olvido">
+            Olvidaste tu contraseña? 
+          </a>
+          <a href="/recover" className="Register">Regístrate </a>
         </form>
       </div>
     </div>
