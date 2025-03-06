@@ -1,0 +1,85 @@
+.Window {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(rgb(6, 6, 61) 40%, purple);
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.Registro {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 550px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 3px rgb(31, 0, 85);
+  background-color: #0b0b24;
+}
+
+.Registro h1 {
+  color: white;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Form input {
+  width: 300px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 3px rgb(31, 0, 85);
+  color: black;
+  background-color: #FFE4E1;
+}
+
+.Form input:focus {
+  border: black;
+  padding: 13px;
+}
+
+.Form button {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  box-shadow: 0px 0px 1px 1px white;
+  background-color: rgb(6, 6, 61);
+}
+
+.Form button:hover {
+  background-color: rgb(40, 0, 77);
+}
+
+.Form a {
+  margin-top: 10px;
+  color: white;
+}
+
+.Form p {
+  text-decoration: none;
+  color: white;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
