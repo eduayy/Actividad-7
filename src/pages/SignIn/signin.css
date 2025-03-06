@@ -17,7 +17,7 @@
   text-align: center;
   border-radius: 20px;
   color: white;
-  box-shadow: 0px 0px 5px 5px white;
+  box-shadow: 0px 0px 3px 3px white;
   background-color: #0b0b24;
 }
 
@@ -30,7 +30,7 @@
   align-items: center;
   margin-top: 30px;
   border-radius: 20px;
-  box-shadow: 0px 0px 5px 5px white;
+  box-shadow: 0px 0px 3px 3px white;
   background-color: #0b0b24;
 }
 
@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .Form input {
@@ -72,6 +72,15 @@
 }
 
 .Form button:hover {
-  color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(40, 0, 77);
+}
+
+.Form a {
+  margin-top: 10px;
+  color: white;
+}
+
+.Form p {
+  text-decoration: none;
+  color: white;
 }
