@@ -3,9 +3,6 @@ import "./signin.css";
 function SignIn() {
   return (
     <div className="Window">
-      <div className="Header">
-        <h1>Investigadores</h1>
-      </div>
       <div className="LogIn">
         <form className="Form">
           <h1>Iniciar Sesión</h1>
@@ -23,11 +20,15 @@ function SignIn() {
             autoComplete="off"
             autoCapitalize="off"
           />
-          <button type="submit">Iniciar Sesión</button>
-          <a href="/register" className="olvido">
-            Olvidaste tu contraseña? 
+          <button type="submit" href="/recover">
+            Iniciar Sesión
+          </button>
+          <a href="/recover" className="olvido">
+            Olvidaste tu contraseña?
           </a>
-          <a href="/recover" className="Register">Regístrate </a>
+          <a href="/register" className="Register">
+            No tienes una cuenta? Regístrate
+          </a>
         </form>
       </div>
     </div>
